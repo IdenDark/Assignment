@@ -2,8 +2,8 @@ FROM eclipse-temurin:21-jdk
 
 WORKDIR /app
 
-COPY ./src /app
+COPY . /app
 
 RUN javac -d . *.java
 
-CMD ["java", "TaxSystem"]
+CMD ["java", "InternshipManagementSystem"]
